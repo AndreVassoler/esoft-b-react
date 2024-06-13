@@ -1,14 +1,13 @@
-"use client"
+import React from 'react';
+import Home from './todo/page';
 
-import Contador from "@/components/Contador/Contador";
-import styles from "./page.module.css";
-
-export default function Home() {
+const MainPage: React.FC = () => {
   return (
-    <main className={styles.main}>
-      <h1>Olá!</h1>
-      <Contador valorInicial={5} callback={(valor) => console.log(valor)} />
-
-    </main>
+    <div>
+      <Home title="Squirtle" />
+      {/* Resto do código da página principal */}
+    </div>
   );
 }
+
+export default MainPage;

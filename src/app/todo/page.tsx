@@ -1,9 +1,18 @@
-import Contador from "@/components/Contador/Contador"
+import React from 'react';
+import styles from "../../components/page.module.css"
 
-function Todo () {
-    return (
-        <h2>Página todo</h2>
-    )
+interface HomeProps {
+  title: string;
 }
 
-export default Todo
+const Home: React.FC<HomeProps> = ({ title }) => {
+  return (
+    <main className={styles.main}>
+      <header className={styles.header}>
+      <h1 className={styles.title}>{title}</h1>
+      </header>
+    </main>
+  );
+}
+
+export default Home;
