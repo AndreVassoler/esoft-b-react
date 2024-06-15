@@ -1,6 +1,6 @@
-import styles from "./page.module.css";
-import CardSection from "/workspaces/esoft-b-react/src/app/components/CardSection/CardSection.tsx";
-import Header from "/workspaces/esoft-b-react/src/app/components/Header/Header.tsx";
+import styles from "./app.module.css";
+import CardSection from "../../components/CardSection/CardSection";
+import Header from "../../components/Header/Header"
 
 
 export default function App() {

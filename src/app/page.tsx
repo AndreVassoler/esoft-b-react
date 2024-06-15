@@ -1,13 +1,5 @@
-import React from 'react';
-import Home from './todo/page';
+import App from "./pages/app/page";
 
-const MainPage: React.FC = () => {
-  return (
-    <div>
-      <Home title="Squirtle" />
-      {/* Resto do código da página principal */}
-    </div>
-  );
+export default function Home() {
+  return <App />;
 }
-
-export default MainPage;
