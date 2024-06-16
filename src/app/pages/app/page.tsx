@@ -12,10 +12,22 @@ export default function App() {
 
       <main className={styles.main}>
         <CardSection title="Informações sobre Squirtle">
-          <p>
-            Squirtle é um Pokémon do tipo Água. É o Pokémon inicial da região de
-            Kanto e evolui para Wartortle.
-          </p>
+          <section>
+            <div className={styles.pokemonImg}>
+              <img id="pokemon-img" style={{ width: "200px" }}
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+                alt="Squirtle - Pokémon Aquático"/>
+
+                <img style={{ width: "150px", padding: "10px"}} 
+                  src="https://archives.bulbagarden.net/media/upload/thumb/7/79/Squirtle_SSBU.png/200px-Squirtle_SSBU.png"
+                  alt="Squirtle - Pokémon Aquático"/>
+              
+            </div>
+            <p>
+              Squirtle é um Pokémon do tipo Água. É o Pokémon inicial da região de
+              Kanto e evolui para Wartortle.
+            </p>
+          </section>
         </CardSection>
 
         <CardSection title="Características">
@@ -27,7 +39,7 @@ export default function App() {
         </CardSection>
 
         <CardSection title="Curiosidades">
-          <ul>
+          <ul className={styles.lupa}>
             <li>Squirtle é um dos Pokémon mais populares e adoráveis.</li>
             <li>
               Seu nome é uma combinação de squirt (esguicho) e turtle
