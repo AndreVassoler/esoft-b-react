@@ -2,12 +2,25 @@ import styles from "./app.module.css";
 import CardSection from "../../components/CardSection/CardSection";
 import Header from "../../components/Header/Header"
 
-
 export default function App() {
   return (
     <>
       <header>
         <Header title="Squirtle" />
+
+        <nav aria-label="Navegação principal">
+        <ul>
+            <li><a href="#info-squirtle">Informações sobre Squirtle</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#artigo-squirtle">Artigo sobre Squirtle</a></li>
+            <li><a href="#recursos">Recursos Adicionais</a></li>
+            <li><a href="#evolucao">Evolução</a></li>
+            <li><a href="./page/todo/index.html">Todo List</a></li>
+        </ul>
+    </nav>
+       
+
       </header>
 
       <main className={styles.main}>
@@ -18,7 +31,7 @@ export default function App() {
                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
                 alt="Squirtle - Pokémon Aquático"/>
 
-                <img style={{ width: "150px", padding: "10px"}} 
+                <img style={{ padding: "30px"}} 
                   src="https://archives.bulbagarden.net/media/upload/thumb/7/79/Squirtle_SSBU.png/200px-Squirtle_SSBU.png"
                   alt="Squirtle - Pokémon Aquático"/>
               
@@ -31,6 +44,7 @@ export default function App() {
         </CardSection>
 
         <CardSection title="Características">
+          <p></p>
           <p>
             Squirtle é conhecido por sua concha nas costas, que oferece proteção
             adicional. Ele possui ataques de água poderosos, como Water Gun e
@@ -77,7 +91,7 @@ export default function App() {
         </CardSection>
 
         <CardSection title="Recursos Adicionais">
-          <ul>
+          <ul className={styles.recursos}>
             <li>
               <a href="https://www.pokemon.com/br/pokedex/squirtle">
                 Pokédex - Squirtle
@@ -92,15 +106,15 @@ export default function App() {
         </CardSection>
 
         <CardSection title="Evoluções">
-          <ul>
+          <ul className={styles.evolucao}>
             <li>
-              <a href="./pages/pokemon/index.html?name=squirtle">
+              <a id="test" href="./pages/pokemon/index.html?name=squirtle">
                 <figure>
                   <img
                     src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png"
                     alt="Squirtle"
                   />
-                  <figcaption>1. Squirtle</figcaption>
+                  <figcaption className={styles.evoLink}>1. Squirtle</figcaption>
                 </figure>
               </a>
             </li>
