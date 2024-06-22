@@ -34,6 +34,17 @@
   text-decoration: none;
 }
 
-#test {
-  text-decoration: none;
+.navPrincipal {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #343a40;
+    padding: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.navegacao {
+  color:white ;
 }

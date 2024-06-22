@@ -9,8 +9,8 @@ export default function App() {
         <Header title="Squirtle" />
 
         <nav aria-label="Navegação principal">
-        <ul>
-            <li><a href="#info-squirtle">Informações sobre Squirtle</a></li>
+        <ul className={styles.navPrincipal}>
+            <li className={styles.Navegacao}><a href="#info-squirtle">Informações sobre Squirtle</a></li>
             <li><a href="#caracteristicas">Características</a></li>
             <li><a href="#curiosidades">Curiosidades</a></li>
             <li><a href="#artigo-squirtle">Artigo sobre Squirtle</a></li>
@@ -25,7 +25,7 @@ export default function App() {
 
       <main className={styles.main}>
         <CardSection title="Informações sobre Squirtle">
-          <section>
+          <section id="info-squirtle">
             <div className={styles.pokemonImg}>
               <img id="pokemon-img" style={{ width: "200px" }}
                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
@@ -44,8 +44,7 @@ export default function App() {
         </CardSection>
 
         <CardSection title="Características">
-          <p></p>
-          <p>
+          <p id="caracteristicas">
             Squirtle é conhecido por sua concha nas costas, que oferece proteção
             adicional. Ele possui ataques de água poderosos, como Water Gun e
             Hydro Pump.
@@ -53,7 +52,7 @@ export default function App() {
         </CardSection>
 
         <CardSection title="Curiosidades">
-          <ul className={styles.lupa}>
+          <ul className={styles.lupa} id="curiosidades">
             <li>Squirtle é um dos Pokémon mais populares e adoráveis.</li>
             <li>
               Seu nome é uma combinação de squirt (esguicho) e turtle
@@ -68,7 +67,7 @@ export default function App() {
         </CardSection>
 
         <CardSection title="Squirtle: O Amigo Aquático">
-          <p>
+          <p id="artigo-squirtle">
             Squirtle, com sua aparência simpática e sua habilidade em controlar
             a água, conquistou o coração de treinadores Pokémon ao redor do
             mundo. Sendo o inicial de água na região de Kanto, Squirtle é uma
@@ -91,7 +90,7 @@ export default function App() {
         </CardSection>
 
         <CardSection title="Recursos Adicionais">
-          <ul className={styles.recursos}>
+          <ul className={styles.recursos} id="recursos">
             <li>
               <a href="https://www.pokemon.com/br/pokedex/squirtle">
                 Pokédex - Squirtle
@@ -106,7 +105,7 @@ export default function App() {
         </CardSection>
 
         <CardSection title="Evoluções">
-          <ul className={styles.evolucao}>
+          <ul className={styles.evolucao} id="evolucao">
             <li>
               <a id="test" href="./pages/pokemon/index.html?name=squirtle">
                 <figure>
